@@ -27,7 +27,8 @@
 
 .jumbotron {
 	height: 100vh;
-	background-image: url("stock_wedding.jpg");
+	/*background-image: url("stock_wedding.jpg");*/
+	background-color: #D97B3F;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
@@ -64,15 +65,17 @@
 
 #myCarousel {
 	overflow: hidden;
-	width: 100vw;
+	width: auto;
 	height: auto;
+	background-color: black;
 }
 
 #myCarousel img {
-	align-items: center;
+	align-content: center;
 	max-width: 100vw;
 	display: block;
-	max-height: 1000px;
+	max-height: 100vh;
+	margin: auto;
 }
 
 #info p {

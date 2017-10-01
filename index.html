@@ -40,6 +40,7 @@
 	  </div>
 	</nav>
 
+
 	<div class="jumbotron" id="about">
 		<h1 id="names">Bryanna & Garrett</h1>
 		<p id="date">March 22, 2018</p>
@@ -52,7 +53,6 @@
 		<ol class="carousel-indicators">
 		   <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
 		  <li data-target="#myCarousel" data-slide-to="1"></li>
-		  <li data-target="#myCarousel" data-slide-to="2"></li>
 		</ol>
 
 		  <!-- Wrapper for slides -->
@@ -93,13 +93,13 @@
 </div>
 
 
-<div id="googleMap" style="width:100%;height:400px;margin-top:20px;"></div>
+<div id="googleMap" style="width:95%;height:400px;margin-top:20px;margin:auto;"></div>
 
 <script>
 
 function myMap() {
 var myCenter = new google.maps.LatLng(35.912215, -79.051352);
-var mapProp = {center:myCenter, zoom:13, scrollwheel:false, draggable:true, mapTypeId:google.maps.MapTypeId.ROADMAP};
+var mapProp = {center:myCenter, zoom:15, scrollwheel:false, draggable:true, mapTypeId:google.maps.MapTypeId.ROADMAP};
 var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
 var marker = new google.maps.Marker({position:myCenter});
 marker.setMap(map);
@@ -109,51 +109,63 @@ marker.setMap(map);
 
 <div class="container-fluid bg-grey" id="bridal_party">
   <h2 class="text-center">Bridal Party</h2>
-
   <div class="row">
   	<div class="col-sm-6">
-  		<img src="default-profile.png" alt="Person" class="img-circle person">
-  		<p class="text-center"><strong>John Doe</strong></p><br>
-  	</div>
-  	<div class="col-sm-6">
-  		<img src="default-profile.png" alt="Person" class="img-circle person">
-  		<p class="text-center"><strong>Jane Doe</strong></p><br>
+
   	</div>
   </div>
 
   <div class="row">
   	<div class="col-sm-6">
-  		<img src="default-profile.png" alt="Person" class="img-circle person">
-  		<p class="text-center"><strong>John Doe</strong></p><br>
+  		<div class="groomsmen">
+	  		<img src="default-profile.png" alt="Person" class="img-circle person">
+	  		<p class="text-center"><strong>John Doe</strong></p><br>
+  		</div>
+  		<div class="groomsmen">
+	  		<img src="default-profile.png" alt="Person" class="img-circle person">
+	  		<p class="text-center"><strong>John Doe</strong></p><br>
+  		</div>
+  		<div class="groomsmen">
+	  		<img src="default-profile.png" alt="Person" class="img-circle person">
+	  		<p class="text-center"><strong>John Doe</strong></p><br>
+  		</div>
+  		<div class="groomsmen">
+	  		<img src="default-profile.png" alt="Person" class="img-circle person">
+	  		<p class="text-center"><strong>John Doe</strong></p><br>
+  		</div>
+  		<div class="groomsmen">
+	  		<img src="default-profile.png" alt="Person" class="img-circle person">
+	  		<p class="text-center"><strong>John Doe</strong></p><br>
+  		</div>
   	</div>
-  	<div class="col-sm-6">
-  		<img src="default-profile.png" alt="Person" class="img-circle person">
-  		<p class="text-center"><strong>Jane Doe</strong></p><br>
-  	</div>
-  </div>
-</div>
+  
 
-<div class="row">
+  
   	<div class="col-sm-6">
-  		<img src="default-profile.png" alt="Person" class="img-circle person">
-  		<p class="text-center"><strong>John Doe</strong></p><br>
-  	</div>
-  	<div class="col-sm-6">
-  		<img src="default-profile.png" alt="Person" class="img-circle person">
-  		<p class="text-center"><strong>Jane Doe</strong></p><br>
+  		<div class="bridesmaids">
+	  		<img src="default-profile.png" alt="Person" class="img-circle person">
+	  		<p class="text-center"><strong>Jane Doe</strong></p><br>
+  		</div>
+  		<div class="bridesmaids">
+	  		<img src="default-profile.png" alt="Person" class="img-circle person">
+	  		<p class="text-center"><strong>Jane Doe</strong></p><br>
+  		</div>
+  		<div class="bridesmaids">
+	  		<img src="default-profile.png" alt="Person" class="img-circle person">
+	  		<p class="text-center"><strong>Jane Doe</strong></p><br>
+  		</div>
+  		<div class="bridesmaids">
+	  		<img src="default-profile.png" alt="Person" class="img-circle person">
+	  		<p class="text-center"><strong>Jane Doe</strong></p><br>
+  		</div>
+  		<div class="bridesmaids">
+	  		<img src="default-profile.png" alt="Person" class="img-circle person">
+	  		<p class="text-center"><strong>Jane Doe</strong></p><br>
+  		</div>
   	</div>
   </div>
 
-  <div class="row">
-  	<div class="col-sm-6">
-  		<img src="default-profile.png" alt="Person" class="img-circle person">
-  		<p class="text-center"><strong>John Doe</strong></p><br>
   	</div>
-  	<div class="col-sm-6">
-  		<img src="default-profile.png" alt="Person" class="img-circle person">
-  		<p class="text-center"><strong>Jane Doe</strong></p><br>
-  	</div>
-  </div>
 
   <div class="container-fluid bg-grey" id="guest_info" style="background-color:GhostWhite">
   	<h2 class="text-center">Guest Info</h2><br>
@@ -164,6 +176,7 @@ marker.setMap(map);
   	<p>info info info info info info info info info info info</p><br>
   	<p>info info info info info info info info info info info</p><br>
   </div>
+
   <div class="container-fluid" id="registry">
   	<h2 class="text-center">Registry</h2>
   	<div class="row" style="margin-left: 5%;">
@@ -181,15 +194,14 @@ marker.setMap(map);
   	<div class="row" style="margin-left: 7%;">
   		<div class="col-sm-6">
   		<a href="https://www.amazon.com" target="_blank">
-  			<img src="https://media.corporate-ir.net/media_files/IROL/17/176060/img/logos/amazon_logo_RGB.jpg" alt="Amazon" style="width:35%;height: auto;">
+  			<img src="http://media.corporate-ir.net/media_files/IROL/17/176060/img/logos/amazon_logo_RGB.jpg" alt="Amazon" style="width:35%;height: auto;">
   		</a>
   		</div><br>
   		<div class="col-sm-6">
   		<a href="https://www.ikea.com" target="_blank">
-  			<img src="https://static.lakana.com/media.ktvu.com/photo/2016/03/15/IKEA_1458066583177_1008507_ver1.0.jpg" alt="Amazon" style="width:35%;height: auto;">
+  			<img src="http://static.lakana.com/media.ktvu.com/photo/2016/03/15/IKEA_1458066583177_1008507_ver1.0.jpg" alt="Amazon" style="width:35%;height: auto;">
   		</a>
   		</div>
-  	</div>
   	</div>
   </div>
 
