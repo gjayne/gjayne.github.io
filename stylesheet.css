@@ -141,20 +141,20 @@
 	padding: 5%;
 }
 
-#registry row {
-	height: 50%;
-	width: auto;
-}
-
 #registry img {
-	height:10vh;
-    width: auto;
+	height:auto;
+    width: 40vh;
     margin: auto;
     display: block;
 }
 
 #registry img:hover {
+	transform: scale(1.25, 1.25);
 	
+}
+
+#registry .row {
+	margin-bottom: 5%;
 }
 
 footer {
