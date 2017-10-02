@@ -20,6 +20,11 @@
 	color: white;
 }
 
+.navbar-header .navbar-toggle .icon-bar {
+	background-color: white;
+	
+} 
+
 
 .container {
 	padding: 80px 120px;
@@ -113,6 +118,36 @@
 
 #guest_info > p {
 	text-align: center;
+}
+
+#glyphicon-gift {
+	font-size: calc(15px + 1.5vw);
+	margin: 5px;
+}
+
+.registry_tile {
+	width: 50%;
+	height: auto;
+}
+
+.registry_tile img {
+	width: 30%;
+	height: auto;
+}
+
+#registry img {
+	-webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    opacity: 0.75
+    margin: auto;
+    display: block;
+}
+
+#registry img:hover {
+	-webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+    opacity: 1;
+    -webkit-transition: opacity 0.5s;
 }
 
 footer {
