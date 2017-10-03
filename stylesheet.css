@@ -121,7 +121,7 @@
 }
 
 #glyphicon-gift {
-	font-size: calc(15px + 1.5vw);
+	font-size: calc(15px + 2vw);
 	margin: 5px;
 }
 
@@ -139,22 +139,22 @@
 	height: 100vh;
 	width: auto;
 	padding: 5%;
+	background-color: white;
+}
+
+#registry .col-md-6{
+	margin-bottom: calc(20px + 1.5vh);
 }
 
 #registry img {
 	height:auto;
-    width: 40vh;
+    width: calc(40vh + 1.5vh);
     margin: auto;
     display: block;
 }
 
 #registry img:hover {
 	transform: scale(1.25, 1.25);
-	
-}
-
-#registry .row {
-	margin-bottom: 5%;
 }
 
 footer {
