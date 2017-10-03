@@ -36,8 +36,9 @@ div h2 {
 
 .jumbotron {
 	height: 100vh;
-	/*background-image: url("stock_wedding.jpg");*/
-	background-color: #D97B3F;
+	background-image: url("images/rings_edited.jpg");
+	background-position: center;
+	/*background-color: #D97B3F;*/
 	background-repeat: no-repeat;
 	background-size: cover;
 	margin-bottom: 0px;
