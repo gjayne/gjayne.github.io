@@ -12,9 +12,10 @@
   	<link rel="stylesheet" type="text/css" href="stylesheet.css">
   	<link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
   	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+  	<script src="https://sdk.amazonaws.com/js/aws-sdk-2.7.16.min.js"></script>
 
 	</head>
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
+<body ng-app="myApp" ng-controller="myCtrl" data-spy="scroll" data-target=".navbar" data-offset="50">
 
 	<nav class="navbar navbar-fixed-top">
 	  <div class="container-fluid">
@@ -208,7 +209,8 @@ marker.setMap(map);
   	<h2 class="text-center" style="font-size: calc(30px + 1.5vw);">Guest Book</h2><br>
   	<p class="text-center">Please take a moment to fill out this guest book so that we can have your up to date information.</p><br>
   	<p class="text-center"> Thanks!</p>
-  	<form ng-submut="submitForm" method="post" style="padding-left:15%;padding-right: 15%;padding-top:2.5%;padding-bottom: 5%;">
+
+  	<form ng-submit="submitForm()" name="form" style="padding-left:15%;padding-right: 15%;padding-top:2.5%;padding-bottom: 5%;">
   	  <div class="form-group">
   	  	<label>Full Name:</label>
   	  	<input type="text" class="form-control" name="full_name" ng-model="fullName" id="full_name" required>
@@ -225,7 +227,7 @@ marker.setMap(map);
 	    <label>Phone Number:</label>
 	    <input type="number" name="number" ng-model="number" required format-phone class="form-control" id="phone_number">
 	  </div>
-	  <button type="submit" class="btn btn-default">Submit</button>
+	  <input type="submit">
 	</form>
   </div>
 
@@ -238,11 +240,9 @@ marker.setMap(map);
 
 	<script>
 		var app = angular.module('myApp', []);
-		app.controller('FormCtrl', function ($scope, $http) {
-		    
+		app.controller('myCtrl', function ($scope) {
 		    $scope.submitForm = function() {
-		        console.log("posting data....");
-		        $http.post('http://posttestserver.com/post.php?dir=jsfiddle', JSON.stringify(data)).success(function(){alert("Thank you!"); console.log("Thank You!");});
+		    	console.log($scope.fullName+", "+$scope.mailing_address+", "+$scope.email+", "+$scope.number);
 		    };
 		});
 	</script>
