@@ -1,28 +1,27 @@
 .navbar {
-	background-color: #147482;
+	background-color: #d9d9d9;
 	border-color: #147482;
 	font-size: 15px;
 }
 
 .navbar-brand {
-	color: #D97B3F;
+	color: #990000;
 	font-weight: bold;
 }
 .navbar-brand:hover {
 	color: white;
 }
 .navbar-nav > li > a {
-   color: white; /*Change active text color here*/
+   color: #336600; /*Change active text color here*/
 }
 
 .navbar-nav >li > .active:hover {
-	background-color: #D97B3F;
-	color: white;
+	background-color: #336600;
+	color: #336600;
 }
 
 .navbar-header .navbar-toggle .icon-bar {
 	background-color: white;
-	
 } 
 
 
@@ -34,66 +33,10 @@ div h2 {
 	text-shadow: 2px 1px 2px grey;
 }
 
-.jumbotron {
-	height: 100vh;
-	background-image: url("images/rings_edited.jpg");
-	background-position: center;
-	/*background-color: #D97B3F;*/
-	background-repeat: no-repeat;
-	background-size: cover;
-	margin-bottom: 0px;
-}
-
-#count_down {
-	color: white;
-	font-weight: 100;
-	font-size: 3vw;
-
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	padding-top: 10vh;
-}
-
-#date {
-	color: teal;
-	font-weight: 100;
-	font-size: 4.5vw;
-
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	padding-top: 5vh;
-}
-
-#names {
-	color:white;
-	font-size: 7vw;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
-#myCarousel {
-	overflow: hidden;
-	width: auto;
-	height: auto;
-	background-color: black;
-	margin-top: 0px;
-}
-
-#myCarousel img {
-	align-content: center;
-	max-width: 100vw;
-	display: block;
-	max-height: 100vh;
-	margin: auto;
-}
-
 #info .well {
 	margin-left: 1.5%;
 	margin-right: 1.5%;
-	background-color: #D97B3F;
+	background-color: #990000;
 }
 
 #info p {
@@ -111,32 +54,6 @@ div h2 {
 	margin-right: 6px;
 }
 
-.img-circle {
-	background-color: #f5f5f0;
-	display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.col-sm-6 p {
-	margin-bottom: 25px;
-	font-size: calc(12px + 1.5vw);
-}
-
-.person {
-    border: 10px solid transparent;
-    margin-bottom: 25px;
-     width: calc(40% + 1.25vw);
-    height: calc(40% + 1.25vw);
-    opacity: 0.7;
-}
-.person:hover {
-    border-color: #f1f1f1;
-}
-
-#guest_info > p {
-	text-align: center;
-}
 
 #glyphicon-gift {
 	font-size: calc(15px + 2vw);
@@ -187,4 +104,3 @@ footer .glyphicon {
     margin-bottom: 20px;
     color: white;
 }
-
