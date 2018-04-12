@@ -11,45 +11,49 @@
 	  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	  	<link rel="stylesheet" type="text/css" href="stylesheet.css">
 	  	<link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+	  	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
 	  	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
 	</head>
 
 	<body ng-app="myApp" ng-controller="myCtrl" data-spy="scroll" data-target=".navbar" data-offset="50">
 
-		<nav class="navbar navbar-fixed-top">
-			<div class="container-fluid">
-	    		<div class="navbar-header">
-	    			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-	        			<span class="icon-bar"></span>
-	        			<span class="icon-bar"></span>
-	        			<span class="icon-bar"></span>                        
-	      			</button>
-	      			<a class="navbar-brand" href="#">Jayne Wedding</a>
-	    		</div>
-	    		<div class="collapse navbar-collapse" id="myNavbar">
-	      			<ul class="nav navbar-nav">
-	        			<li class="active"><a href="#about">Home</a></li>
-	        			<li><a href="#myCarousel">Gallery</a></li>
-	        			<li><a href="#info">The Big Day</a></li>
-	        			<li><a href="#bridal_party">Bridal Party</a></li>
-	        			<li><a href="#guest_info">Wedding Details</a></li>
-	        			<li><a href="#registry">Registry</a></li>
-	        			<li><a href="#guest_book">RSVP</a></li>
-	      			</ul>
-	    		</div>
-	  		</div>
-		</nav>
 
 		<div class="jumbotron" id="about">
-			<div id="headline">
-				<p id="date">December 14, 2018</p><br>
-				<h1 id="count_down"></h1>
-			</div>		
+			
+
+			<nav class="navbar">
+				<div class="container-fluid">
+		    		<div class="navbar-header">
+		    			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+		        			<span class="icon-bar"></span>
+		        			<span class="icon-bar"></span>
+		        			<span class="icon-bar"></span>                        
+		      			</button>
+		      			<a class="navbar-brand" id="navBarBrand" href="#">Jayne Wedding  </a><span class="navbar-brand" style="font-family: sans-serif;">|</span>
+		    		</div>
+		    		<div class="collapse navbar-collapse" id="myNavbar">
+		      			<ul class="nav navbar-nav">
+		        			<li class="active"><a href="#about">Home</a></li>
+		        			<li><a href="#myCarousel">Gallery</a></li>
+		        			<li><a href="#info">The Big Day</a></li>
+		        			<li><a href="#bridal_party">Bridal Party</a></li>
+		        			<li><a href="#guest_info">Wedding Details</a></li>
+		        			<li><a href="#registry">Registry</a></li>
+		        			<li><a href="#guest_book">RSVP</a></li>
+		      			</ul>
+		    		</div>
+		  		</div>
+			</nav>
+
+			<div id="heading">
+				<h1 id="headingName">Garrett <span style="font-size: 120px">&</span> Bryanna</h1>
+				<p style="font-size: 25px">December 14, 2018</p>
+			</div>
 		</div>
 
 		<div class="container-fluid bg-grey" id="info">
   			<h2 class="text-center" style="font-size: calc(30px + 1.5vw);">The Big Day</h2>
-  			<div class="well well-sm">
+  			<div id="infoList">
 		 		<div class="row">
 		    		<div class="col-lg-4 col-md-4 col-sm-4">
 		   				<p><span class="glyphicon glyphicon-calendar"></span>12.14.18</p>
@@ -67,7 +71,7 @@
 				<p id="infoParagraph">The wedding ceremony will begin at 6:00 PM on March 22, 2018 on the lawn of the University of Chapel Hill near the Old Well. Yes, that is correct– the top of a parking garage. The garage is located at the corner of 5th St. and Lavaca St, and the address is E Cameron Ave, Chapel Hill, NC.</p>
 			</div>
 		</div>
-		<div id="googleMap" style="width:90%;height:400px;margin-top:20px;margin:auto;"></div>
+		<div id="googleMap" style="width:90%;height: 40vh;margin:auto;margin-top: -15px"></div>
 		<script>
 			function myMap() {
 				var myCenter = new google.maps.LatLng(35.051519, -78.884256);
@@ -82,6 +86,7 @@
 
   		<div class="container-fluid" id="registry">
 		  	<h2 class="text-center" style="margin-bottom: 10%;font-size: calc(30px + 1.5vw);"><span class="glyphicon glyphicon-gift" style="color: #147482;margin-right: 10px;"></span>Registry</h2>
+		  	<p style="text-align: center;font-size: calc(13px + .6vw);margin-bottom: 7%">We greatly appreciate your generous help to help us start this new chapter in our lives. Thank you!</p><br>
 		  	<div class="row">
 		  		<div class="col-lg-6 col-md-6">
 		  		<a href="https://www.target.com" target="_blank">
@@ -89,27 +94,15 @@
 		  		</a>
 		  		</div>
 		  		<div class="col-lg-6 col-md-6">
-		  			<a href="https://www.crateandbarrel.com/" target="_blank">
-		  			<img src="images/Crate-Barrel-Logo.png" alt="Create&Barrel">
-		  		</a>
-		  		</div>
-		  	</div>
-		  	<div class="row">
-		  		<div class="col-lg-6 col-md-6">
 		  		<a href="https://www.amazon.com/wedding/garrett-jayne-bryanna-covey-fayetteville-december-2018/registry/23V5ETN41VXDF" target="_blank">
 		  			<img src="images/amazon.png" alt="Amazon">
-		  		</a>
-		  		</div>
-		  		<div class="col-lg-6 col-md-6">
-		  		<a href="https://www.ikea.com" target="_blank">
-		  			<img src="images/ikea.png" alt="Ikea">
 		  		</a>
 		  		</div>
 		  	</div>
 		 </div>
 
 
-  		<div class="embed-responsive embed-responsive-4by3">
+  		<div class="embed-responsive embed-responsive-4by3" id="guest_book">
   			<iframe class="embed-responsive-item" src="https://docs.google.com/forms/d/e/1FAIpQLSesNQSYpa7N858hlQ7TcnHMcR0jIofeLEGKbRSi_jpW89l6Gw/viewform?embedded=true" allowfullscreen></iframe>
   		</div>
 
@@ -126,10 +119,8 @@
 				postToGoogle();
 	  			// Add smooth scrolling to all links in navbar + footer link
 	  			$(".navbar a, footer a[href='#about']").on('click', function(event) {
-
 	  			// Make sure this.hash has a value before overriding default behavior
 	  			if (this.hash !== "") {
-
 				// Prevent default anchor click behavior
 				event.preventDefault();
 			    // Store hash
