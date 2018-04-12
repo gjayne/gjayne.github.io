@@ -1,18 +1,37 @@
+#heading{
+	font-family: 'Kaushan Script', cursive;
+	text-align: center;
+	margin-bottom: 5%;
+	color:black;
+}
+
+#headingName{
+	font-size: 95px;
+	margin: auto;
+	margin-top: 5%;
+}
+
+#heading p {
+	
+}
+
 .navbar {
-	background-color: #d9d9d9;
-	border-color: #147482;
-	font-size: 15px;
+	
+	font-size: 25px;
+	font-family: 'Kaushan Script', cursive;
 }
 
 .navbar-brand {
-	color: #990000;
+	color: black;
 	font-weight: bold;
+	font-size: 35px;
 }
-.navbar-brand:hover {
+
+#navBarBrand:hover {
 	color: white;
 }
 .navbar-nav > li > a {
-   color: #336600; /*Change active text color here*/
+   color: black; /*Change active text color here*/
 }
 
 .navbar-nav >li > .active:hover {
@@ -24,6 +43,28 @@
 	background-color: white;
 } 
 
+#about {
+	margin-top: 10px;
+	height: 100vh;
+	width: auto;
+	/*background-image: url(images/winterBackground.jpeg);*/
+	background-image: url(images/new_york_skyline_edited.jpg);
+
+	background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#title {
+	text-align: center;
+	vertical-align: middle;
+}
+
+#headline {
+	text-align: center;
+	vertical-align: middle;
+}
+
+
 
 .container {
 	padding: 80px 120px;
@@ -33,14 +74,18 @@ div h2 {
 	text-shadow: 2px 1px 2px grey;
 }
 
-#info .well {
+#info {
 	margin-left: 1.5%;
 	margin-right: 1.5%;
-	background-color: #990000;
+	margin-bottom: 5%;
+}
+
+#infoList {
+	margin-top: 5%;
 }
 
 #info p {
-	color: white;
+	color: black;
 	font-size: calc(15px + 0.15vw);
 	text-align: center;
 }
@@ -83,7 +128,7 @@ div h2 {
 
 #registry img {
 	height:auto;
-    width: calc(40vh + 1.5vh);
+    width: calc(60vh + 2vh);
     margin: auto;
     display: block;
 }
