@@ -12,10 +12,12 @@
 	  	<link rel="stylesheet" type="text/css" href="stylesheet.css">
 	  	<link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
 	  	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+	  	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	  	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
 	  	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
 	</head>
 
-	<body>
+	<body ng-app="myApp" ng-controller="myCtrl" data-spy="scroll" data-target=".navbar" data-offset="50">
 
 
 		<div class="jumbotron" id="about">
@@ -29,15 +31,13 @@
 		        			<span class="icon-bar"></span>
 		        			<span class="icon-bar"></span>                        
 		      			</button>
-		      			<a class="navbar-brand" id="navBarBrand" href="#">Jayne Wedding  </a><span class="navbar-brand" style="font-family: sans-serif;">|</span>
+		      			<a class="navbar-brand" id="navBarBrand">Jayne Wedding</a>
 		    		</div>
 		    		<div class="collapse navbar-collapse" id="myNavbar">
 		      			<ul class="nav navbar-nav">
 		        			<li class="active"><a href="#about">Home</a></li>
-		        			<li><a href="#myCarousel">Gallery</a></li>
 		        			<li><a href="#info">The Big Day</a></li>
 		        			<li><a href="#bridal_party">Bridal Party</a></li>
-		        			<li><a href="#guest_info">Wedding Details</a></li>
 		        			<li><a href="#registry">Registry</a></li>
 		        			<li><a href="#guest_book">RSVP</a></li>
 		      			</ul>
@@ -45,36 +45,48 @@
 		  		</div>
 			</nav>
 
-			<div id="heading">
-				<h1 id="headingName">Garrett <span style="font-size: 120px">&</span> Bryanna</h1>
-				<p style="font-size: 25px">December 14, 2018</p>
+			<div id="heading" class="row" style="display: block; height: 70%">
+				<div class="col-lg-4 col-md-4 col-sm-4">
+					<span class="headingName">Garrett</span>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-4">
+					<span class="headingName">&</span>
+				</div>
+				<div class="col-sm-4">
+					<span class="headingName">Bryanna</span>
+				</div>
+				
 			</div>
+			<p style="font-size: 25px">December 14, 2018</p>
 		</div>
 
 		<div class="container-fluid bg-grey" id="info">
-  			<h2 class="text-center" style="font-size: calc(30px + 1.5vw);">The Big Day</h2>
+  			<h2 class="text-center">The Big Day</h2>
   			<div id="infoList">
 		 		<div class="row">
-		    		<div class="col-lg-4 col-md-4 col-sm-4">
+		    		<div class="col-lg-4 col-md-4 col-sm-4" style="float: left;font-weight: bold">
 		   				<p><span class="glyphicon glyphicon-calendar"></span>12.14.18</p>
+		   				<p><span class="glyphicon glyphicon-time"></span>5:30 PM</p>
+		   				<p><span class="glyphicon glyphicon-map-marker"></span>215 Williams St. Fayetteville, NC 28301</p>
 		   			</div>
-		   			<div class="col-lg-4 col-md-4 col-sm-4">
-		   	  			<p><span class="glyphicon glyphicon-time"></span>5:30 PM</p>
-		   			</div>
-		   			<div class="col-lg-4 col-md-4 col-sm-4">
-		   	  			<p style="margin-left: -10px;"><span class="glyphicon glyphicon-map-marker"></span>215 Williams St. Fayetteville, NC 28301</p>
+		   			
+		   			<div class="col-lg-8 col-md-8 col-sm-8">
+		   	  			
+		   	  		<p>Our ceremony and reception will be held at Studio 215 in Downtown Fayetteville on December 14th, 2018. The ceromony will begin at 5:30 PM, followed by the reception where dinner and drinks will be served. Dress is semiformal, guys you can dress up a nice shirt with a tie and ladies wear your best dress or a nice shirt/sweater and pants. There will be lots of dancing so wear your best dancing shoes!</p>
+		   	  			
 		   			</div> 
+		  		</div><br>
+		  		<div class="row">
+		  			<div class="col-lg-12 col-md-12 col-sm-12"> 
+		  				<p>Studio 215 has a gravel and grass parking lot located on the backside of the building. However, this is a small parking lot and can easily become congested. Therefore, we suggest as you arrive filing in with the guest entering the lot in front of you (we didn't pay for the parking attendant because we have faith in yall). If this lot becomes full, there is an additional lot located on the frontside of the building that is owned by the county that is available to us after 5PM. </p>
+		  			</div>
 		  		</div>
 			</div>
-
-			<div>
-				<p id="infoParagraph">The wedding ceremony will begin at 6:00 PM on March 22, 2018 on the lawn of the University of Chapel Hill near the Old Well. Yes, that is correct– the top of a parking garage. The garage is located at the corner of 5th St. and Lavaca St, and the address is E Cameron Ave, Chapel Hill, NC.</p>
-			</div>
 		</div>
-		<div id="googleMap" style="width:90%;height: 40vh;margin:auto;margin-top: -15px"></div>
+		<div id="googleMap" style="width:90%;height: 40vh;margin:auto;margin-top: -15px;margin-bottom: 5%"></div>
 		<script>
 			function myMap() {
-				var myCenter = new google.maps.LatLng(35.051519, -78.884256);
+				var myCenter = new google.maps.LatLng(35.051588, -78.88425);
 				var mapProp = {center:myCenter, zoom:14, scrollwheel:false, draggable:true, mapTypeId:google.maps.MapTypeId.ROADMAP};
 				var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
 				var marker = new google.maps.Marker({position:myCenter});
@@ -85,8 +97,8 @@
 
 
   		<div class="container-fluid" id="registry">
-		  	<h2 class="text-center" style="margin-bottom: 10%;font-size: calc(30px + 1.5vw);"><span class="glyphicon glyphicon-gift" style="color: #147482;margin-right: 10px;"></span>Registry</h2>
-		  	<p style="text-align: center;font-size: calc(13px + .6vw);margin-bottom: 7%">We greatly appreciate your generous help to help us start this new chapter in our lives. Thank you!</p><br>
+		  	<h2 class="text-center">Registry</h2>
+		  	<p style="text-align: center;font-size: calc(13px + .6vw);margin-bottom: 7%">We greatly appreciate your generousity and gifts as we prepare to start this new jounrey together. Thank you!</p><br>
 		  	<div class="row">
 		  		<div class="col-lg-6 col-md-6">
 		  		<a href="https://www.target.com" target="_blank">
