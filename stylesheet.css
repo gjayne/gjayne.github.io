@@ -3,6 +3,7 @@
 	color:black;
 	text-align: center;
 	margin:auto;
+	margin-top: 10vh;
 }
 
 .headingName{
@@ -126,11 +127,6 @@ div h2 {
 	height: auto;
 }
 
-.registry_tile img {
-	width: 30%;
-	height: auto;
-}
-
 #registry {
 	height: 100vh;
 	width: auto;
@@ -144,7 +140,7 @@ div h2 {
 
 #registry img {
 	height:auto;
-    width: calc(60vh + 2vh);
+    width: 75%;
     margin: auto;
     display: block;
 }
