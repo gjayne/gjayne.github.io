@@ -143,6 +143,11 @@ div h2 {
     width: 75%;
     margin: auto;
     display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    vertical-align: middle;
 }
 
 #registry img:hover {
@@ -151,9 +156,13 @@ div h2 {
 
 .text-center {
 	font-family: 'Kaushan Script', cursive;
-	margin-bottom: 10%;
 	font-size: calc(30px + 1.5vw);
 	color:black;
+}
+
+
+h2{
+	margin-bottom: 10%;
 }
 
 #infoList p { 
@@ -165,10 +174,15 @@ p {
 }
 
 footer {
-	padding: 5%;
-	color: white;
+	padding: 3%;
 	font-size: 20px;
 	background-color: black;
+}
+
+footer p {
+	margin-top: 2%;
+	color: white;
+	font-size: calc(10px + 1.5vw);
 }
 
 footer .glyphicon {
