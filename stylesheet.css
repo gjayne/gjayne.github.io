@@ -36,6 +36,7 @@
 .navbar {
 	font-size: 25px;
 	font-family: 'Kaushan Script', cursive;
+	color: black;
 }
 
 .navbar-brand {
@@ -65,15 +66,15 @@
 	height: 100vh;
 	width: auto;
 	/*background-image: url(images/winterBackground.jpeg);*/
-	background-image: url(images/new_york_skyline_compressed.jpg);
+	background-color: #F5EEE8;
+	background-image: url(images/invite.jpg);
 	background-repeat:no-repeat;
-	background-size:cover;
-	background-position:center;   
+	background-size: auto 95% ;
+	background-position:center top;   
 }
 
-#title {
-	text-align: center;
-	vertical-align: middle;
+.title {
+	font-size: 70px;
 }
 
 #headline {
@@ -81,45 +82,20 @@
 	vertical-align: middle;
 }
 
-
-
-.container {
-	padding: 80px 120px;
-}
-
 div h2 {
 	text-shadow: 2px 1px 2px grey;
 }
 
-#info {
-	margin-left: 1.5%;
-	margin-right: 1.5%;
-	margin-bottom: 5%;
-}
-
 #infoList {
+	padding: 3%;
 
 }
+
 
 #info p {
 	color: black;
-	font-size: calc(15px + 0.15vw);
+	font-size: calc(15px + 0.12vw);
 	text-align: center;
-}
-
-#info #infoParagraph {
-	color: black;
-	margin-top: 3%;
-}
-
-.glyphicon {
-	margin-right: 6px;
-}
-
-
-#glyphicon-gift {
-	font-size: calc(15px + 2vw);
-	margin: 5px;
 }
 
 .registry_tile {
@@ -131,7 +107,7 @@ div h2 {
 	height: 100vh;
 	width: auto;
 	padding: 5%;
-	background-color: whitesmoke;
+	
 }
 
 #registry .col-md-6{
@@ -156,13 +132,17 @@ div h2 {
 
 .text-center {
 	font-family: 'Kaushan Script', cursive;
-	font-size: calc(30px + 1.5vw);
 	color:black;
 }
 
+#carnival img {
+	height:auto;
+    width: 60%;
+    margin-bottom: 10%;
+}
 
 h2{
-	margin-bottom: 10%;
+	margin-bottom: 7%;
 }
 
 #infoList p { 
@@ -175,18 +155,12 @@ p {
 
 footer {
 	padding: 3%;
-	font-size: 20px;
-	background-color: black;
+	
+	background-color: #971110;
 }
 
 footer p {
 	margin-top: 2%;
 	color: white;
 	font-size: calc(10px + 1.5vw);
-}
-
-footer .glyphicon {
-    font-size: 20px;
-    margin-bottom: 20px;
-    color: white;
 }
