@@ -69,7 +69,7 @@
 	background-color: #F5EEE8;
 	background-image: url(images/invite.jpg);
 	background-repeat:no-repeat;
-	background-size: auto 95% ;
+	background-size: contain;
 	background-position:center top;   
 }
 
