@@ -105,9 +105,31 @@
 		</div>
 
 
-  		<div class="embed-responsive embed-responsive-4by3" id="guest_book">
-  			<iframe class="embed-responsive-item" src="https://docs.google.com/forms/d/e/1FAIpQLSesNQSYpa7N858hlQ7TcnHMcR0jIofeLEGKbRSi_jpW89l6Gw/viewform?embedded=true" allowfullscreen>Loading...</iframe>
+  		<div  style="padding-bottom: 10%">
+		<div class="container" id="guest_book" style="background-color: ghostwhite;"><br>
+		  	<h2 class="text-center title" style="margin-bottom: 5%; padding-top: 2%;">RSVP</h2>
+		  	<form name="submitToGoogle" style="padding-left:15%;padding-right: 15%;padding-top:2.5%;padding-bottom: 5%;">
+		  	  <div class="form-group">
+		  	  	<label>Name:</label>
+		  	  	<input type="text" class="form-control" name="FullName" required>
+		  	  </div>
+		  	  <div class="form-group">
+			    <label>Can you attend?</label><br>
+			    <input type="radio" name="Attending" value="Yes" style="margin-left: 5%"> Happily Accepts<br>
+			  	<input type="radio" name="Attending" value="No" style="margin-left: 5%"> Regrettfully Declines<br>
+			  </div>
+		  	 <div class="form-group">
+			    <label>Number of Guests:</label>
+			    <input type="number" name="numberOfGuests" class="form-control" required>
+			  </div>
+			  <div class="form-group">
+			    <label for="email">Email address:</label>
+			    <input type="email" name="Email" class="form-control">
+			  </div>			  
+			  <button type="submit" class="btn btn-default">Submit</button>
+			</form>
   		</div>
+  	</div>
 		<footer class="container-fluid text-center">
 	 		<a href="#about" title="To Top">
 				<img src="images/ic_keyboard_arrow_up_white_48px.svg">
