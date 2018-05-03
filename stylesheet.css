@@ -61,9 +61,19 @@
 	background-color: black;
 } 
 
+@media (max-width: 600px) {
+  #about {
+    height: 50vh;
+  }
+}
+
+@media (min-width: 600px) {
+  #about {
+    height: 100vh;
+  }
+}
+
 #about {
-	
-	height: 100vh;
 	width: auto;
 	/*background-image: url(images/winterBackground.jpeg);*/
 	background-color: #F5EEE8;
