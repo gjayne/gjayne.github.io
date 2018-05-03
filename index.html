@@ -14,6 +14,8 @@
 	  	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
 	  	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	  	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+
+	  	<link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
 	  
 	</head>
 
@@ -102,10 +104,9 @@
 		  		</a>
 		  	</div>
 		 </div>
-		</div>
+		</div>  		
 
-
-  		<div  style="padding-bottom: 10%">
+		<div  style="padding-bottom: 10%">
 		<div class="container" id="guest_book" style="background-color: ghostwhite;"><br>
 		  	<h2 class="text-center title" style="margin-bottom: 5%; padding-top: 2%;">RSVP</h2>
 		  	<form name="submitToGoogle" style="padding-left:15%;padding-right: 15%;padding-top:2.5%;padding-bottom: 5%;">
@@ -132,7 +133,7 @@
   		<div class="container" id="thankYou" style="background-color: ghostwhite;">
   			<h2 class="text-center title" style="margin-bottom: 5%; padding-top: 2%;"> Thank You</h2>
   		</div>
-		</div>
+  	</div>
 		<footer class="container-fluid text-center">
 	 		<a href="#about" title="To Top">
 				<img src="images/ic_keyboard_arrow_up_white_48px.svg">
@@ -150,6 +151,8 @@
 			      .then(response => console.log('Success!', response))
 			      .catch(error => console.error('Error!', error.message))
 			  })
+
+
 			</script>
 
   		<script>	
@@ -158,8 +161,8 @@
 				$('#submit').on('click', function() {
 			  		$("#guest_book").hide();
 			  		$('#thankYou').show();
-			  	});
-				
+			  })
+			
 	  			// Add smooth scrolling to all links in navbar + footer link
 	  			$(".navbar a, footer a[href='#about']").on('click', function(event) {
 	  			// Make sure this.hash has a value before overriding default behavior
