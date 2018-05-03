@@ -126,10 +126,12 @@
 			    <label for="email">Email address:</label>
 			    <input type="email" name="Email" class="form-control">
 			  </div>			  
-			  <button type="submit" class="btn btn-default">Submit</button>
+			  <button type="submit" class="btn btn-default" id="submit">Submit</button>
 			</form>
   		</div>
-  	</div>
+  		<div class="container" id="thankYou" style="background-color: ghostwhite;">
+  			<h2 class="text-center title" style="margin-bottom: 5%; padding-top: 2%;"> Thank You</h2>
+  		</div>
 		<footer class="container-fluid text-center">
 	 		<a href="#about" title="To Top">
 				<img src="images/ic_keyboard_arrow_up_white_48px.svg">
@@ -151,7 +153,12 @@
 
   		<script>	
 			$(document).ready(function(){
-			
+				$('#thankYou').hide();
+				$('#submit').on('click', function() {
+			  		$("#guest_book").hide();
+			  		$('#thankYou').show();
+			  	});
+				
 	  			// Add smooth scrolling to all links in navbar + footer link
 	  			$(".navbar a, footer a[href='#about']").on('click', function(event) {
 	  			// Make sure this.hash has a value before overriding default behavior
