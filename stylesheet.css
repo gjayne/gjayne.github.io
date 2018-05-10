@@ -1,5 +1,5 @@
 #heading{
-	
+	font-family: 'Kaushan Script', cursive;
 	color:black;
 	text-align: center;
 	margin:auto;
@@ -74,6 +74,8 @@
 }
 
 #about {
+	
+	
 	width: auto;
 	/*background-image: url(images/winterBackground.jpeg);*/
 	background-color: #F5EEE8;
@@ -143,7 +145,6 @@ div h2 {
 }
 
 .text-center {
-	font-family: 'Kaushan Script', cursive;
 	color:black;
 }
 
