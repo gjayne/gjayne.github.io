@@ -118,7 +118,7 @@ div h2 {
 }
 
 #registry {
-	height: 100vh;
+	height: auto;
 	width: auto;
 	padding: 5%;
 	
@@ -148,11 +148,7 @@ div h2 {
 	color:black;
 }
 
-#carnival img {
-	height:auto;
-    width: 60%;
-    margin-bottom: 10%;
-}
+
 
 h2{
 	margin-bottom: 7%;
