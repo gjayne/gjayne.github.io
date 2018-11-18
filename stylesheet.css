@@ -65,7 +65,7 @@ p {
 
 .navbar-header .navbar-toggle .icon-bar {
 	background-color: black;
-} 
+}
 
 @media (max-width: 600px) {
   #about {
@@ -80,15 +80,15 @@ p {
 }
 
 #about {
-	
-	
+
+
 	width: auto;
 	/*background-image: url(images/winterBackground.jpeg);*/
 	background-color: #F5EEE8;
 	background-image: url(images/invite.jpg);
 	background-repeat:no-repeat;
 	background-size: contain;
-	background-position:center top;   
+	background-position:center top;
 }
 
 .title {
@@ -127,7 +127,7 @@ div h2 {
 	height: auto;
 	width: auto;
 	padding: 5%;
-	
+
 }
 
 .section {
@@ -166,7 +166,7 @@ h2{
 	margin-bottom: 7%;
 }
 
-#infoList p { 
+#infoList p {
 	font-size: calc(2vh + 0.5vw);
 }
 
@@ -176,7 +176,7 @@ p {
 
 footer {
 	padding: 3%;
-	
+
 	background-color: #971110;
 }
 
@@ -184,4 +184,27 @@ footer p {
 	margin-top: 2%;
 	color: white;
 	font-size: calc(10px + 1.5vw);
+}
+
+.hotelText p{
+	font-family: 'Roboto Slab', serif;
+	color: black;
+	font-size: calc(2vh + 0.5vw);
+	text-align: center;
+}
+
+#hotelImg {
+	height:auto;
+    width: 75%;
+    margin: auto;
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    vertical-align: middle;
+}
+
+#hotelImg:hover {
+	transform: scale(1.25, 1.25);
 }
